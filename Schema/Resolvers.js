@@ -4,6 +4,9 @@ const { users } = require("../FakeData");
 const resolvers = {
     Query: {
         getAllUsers(){
+            var root = {
+                user : ({age}) => age === null? users: users.filter(user => user.age < 18)
+              }
             return users;
         },
     },
@@ -14,6 +17,7 @@ const resolvers = {
             return newUser;
         }
     }
+    
 };
 
 module.exports = { resolvers };

@@ -12,7 +12,6 @@ const express = require("express");
 //typedef => we have to determine the type of data & also need all functions we execute which is known as mutation
 //resolvers =>  functions called when we make request to that typedefs
 
-
 async function startApolloServer(typeDefs, resolvers){
     const server = new ApolloServer({typeDefs, resolvers})
     const app = express();
