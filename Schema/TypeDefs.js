@@ -15,6 +15,8 @@ const typeDefs = gql`
     type Query{
         #will return the list of users
         getAllUsers: [User!]!
+        # filter: { {age: between: {min: 10, max: 20}} 
+        
     }
 
     # Mutations
