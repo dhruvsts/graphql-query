@@ -5,6 +5,7 @@ const typeDefs = gql`
     scalar Date
 
     type User{
+        id: Int!
         name: String!
         age: Int!
         married: Boolean!
@@ -21,7 +22,10 @@ const typeDefs = gql`
 
     # Mutations
     type Mutation{
-        createUser(name: String!, age: Int!, married: Boolean!): User!
+        createUser(id:Int!, name: String!, age: Int!, married: Boolean!): User
+        updateUser(id:Int, name: String!, married: Boolean!): User
+        deleteUser(id: ID): User
+
     }
 `;
 
