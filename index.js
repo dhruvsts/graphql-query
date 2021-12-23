@@ -5,8 +5,8 @@ const { resolvers } = require("./Schema/Resolvers");
 
 //basic config for express server
 const express = require("express");
-// const app = express;
 
+// const app = express;
 
 // var server and set it to new instance of apollo server
 //typedef => we have to determine the type of data & also need all functions we execute which is known as mutation
