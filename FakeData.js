@@ -30,4 +30,3 @@ let users = [
 ];
 
 module.exports = { users };
-// module.exports =  getUse = (id) => users.find(id => id.id == id)

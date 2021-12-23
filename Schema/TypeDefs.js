@@ -25,7 +25,6 @@ const typeDefs = gql`
         createUser(id:Int!, name: String!, age: Int!, married: Boolean!): User
         updateUser(id:Int, name: String!, married: Boolean!): User
         deleteUser(id: ID): User
-
     }
 `;
 
