@@ -4,7 +4,7 @@ install the following to run the program:
 npm i express apollo-server-express graphql nodemon
 
 run the following on apollo sandbox: 
-//this it to get all users
+//this it to get all users: 
 {
   getAllUsers {
     id
@@ -14,7 +14,7 @@ run the following on apollo sandbox:
   }
 }
 
-//this is to create new user
+//this is to create new user: 
 mutation{
   createUser(id: 5, name: "Ernw", age: 5, married: false) {
     id
@@ -23,7 +23,8 @@ mutation{
     married
   }
 }
-//this is to update a user via ID
+
+//this is to update a user via ID: 
 mutation{
   updateUser(id: 3, name: "dhruv", married: false) {
     name
@@ -31,7 +32,7 @@ mutation{
   }
 }
 
-//delete user by ID
+//delete user by ID:
 mutation{
   deleteUser(id: 5) {
     id
